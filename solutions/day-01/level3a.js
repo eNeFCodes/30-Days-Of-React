@@ -135,12 +135,154 @@ switch (monthInput.toLowerCase()) {
     case 'december':
         monthDate = new Date(2022, 12, 0);
         break;
-        default: break;
+    default: break;
 }
 if (monthDate) {
-    console.log(`${monthInput} has ${monthDate.getDate()} days.\n`,monthDate);
+    console.log(`${monthInput} has ${monthDate.getDate()} days.\n`, monthDate);
 } else {
     console.log(`Invalid month`);
 }
 
-// 5. Loops
+// 7. Objects
+const dog = {
+    name: 'Dog',
+    legs: 4,
+    color: 'blue',
+    age: 3,
+    bark: function () {
+        return 'woof woof';
+    },
+
+};
+console.log(dog);
+console.log(`name: ${dog.name}, legs: ${dog.legs}, color: ${dog.color}, age: ${dog.age}, bark: ${dog.bark()}`);
+
+dog.breed = '101';
+dog.getDogInfo = function () {
+    console.log(`Dog info - name: ${dog.name}, legs: ${dog.legs}, color: ${dog.color}, age: ${dog.age}, bark: ${dog.bark()}`);
+}
+
+dog.getDogInfo();
+
+// Exercises: Level 2
+const users = {
+    Alex: {
+        email: 'alex@alex.com',
+        skills: ['HTML', 'CSS', 'JavaScript'],
+        age: 20,
+        isLoggedIn: false,
+        points: 30
+    },
+    Asab: {
+        email: 'asab@asab.com',
+        skills: ['HTML', 'CSS', 'JavaScript', 'Redux', 'MongoDB', 'Express', 'React', 'Node'],
+        age: 25,
+        isLoggedIn: false,
+        points: 50
+    },
+    Brook: {
+        email: 'daniel@daniel.com',
+        skills: ['HTML', 'CSS', 'JavaScript', 'React', 'Redux'],
+        age: 30,
+        isLoggedIn: true,
+        points: 50
+    },
+    Daniel: {
+        email: 'daniel@alex.com',
+        skills: ['HTML', 'CSS', 'JavaScript', 'Python'],
+        age: 20,
+        isLoggedIn: false,
+        points: 40
+    },
+    John: {
+        email: 'john@john.com',
+        skills: ['HTML', 'CSS', 'JavaScript', 'React', 'Redux', 'Node.js'],
+        age: 20,
+        isLoggedIn: true,
+        points: 50
+    },
+    Thomas: {
+        email: 'thomas@thomas.com',
+        skills: ['HTML', 'CSS', 'JavaScript', 'React'],
+        age: 20,
+        isLoggedIn: false,
+        points: 40
+    },
+    Paul: {
+        email: 'paul@paul.com',
+        skills: ['HTML', 'CSS', 'JavaScript', 'MongoDB', 'Express', 'React', 'Node'],
+        age: 20,
+        isLoggedIn: false,
+        points: 40
+    }
+}
+
+// Find the person who has many skills in the users object.
+let person;
+for (let key of Object.keys(users)) {
+    let user = users[key];
+    if (person) {
+        if (user.skills.length > person.info.skills.length) {
+            person = { name: key, info: user };
+        }
+    } else {
+        person = { name: key, info: user };
+    }
+}
+console.log(`Has many skills:`, person);
+
+// Count logged in users,count users having greater than equal to 50 points from the following object.
+let loggedInUsers = 0;
+let usersWithMoreThan50 = 0;
+for (let key of Object.keys(users)) {
+    let user = users[key];
+    if (user.isLoggedIn) {
+        loggedInUsers++;
+    }
+    if (user.points >= 50) {
+        usersWithMoreThan50++;
+    }
+}
+console.log(`loggedInUsers: ${loggedInUsers}, usersWithMoreThan50: ${usersWithMoreThan50}`);
+
+// Find people who are MERN stack developer from the users object
+let mernDevs = [];
+for (let key of Object.keys(users)) {
+    let user = users[key];
+    if (user.skills.includes('MongoDB')
+        && user.skills.includes('Express')
+        && user.skills.includes('React')
+        && user.skills.includes('Node')) {
+        mernDevs.push({ [key]: user });
+    }
+}
+console.log('mernDevs: ', mernDevs);
+
+// Set your name in the users object without modifying the original users object
+users.Neil = {
+    email: 'neil@neil.com',
+    skills: ['HTML', 'CSS', 'JavaScript', 'MongoDB', 'Express', 'React', 'Node'],
+    age: 20,
+    isLoggedIn: false,
+    points: 40
+};
+console.log(users)
+
+// Get all keys or properties of users object
+for (let [key, values] of Object.entries(users)) {
+    console.log(`key: ${key} \nvalues:`, values);
+}
+
+// Get all the values of users object
+for (let [key, values] of Object.entries(users)) {
+    console.log(`\n${key}`)
+    for (let [key, value] of Object.entries(values)) {
+        console.log(`${key}:`, value);
+    }
+}
+
+// Use the countries object to print a country name, capital, populations and languages.
+import countries from './countries.js';
+for (let name of countries) {
+    console.log(`name: ${name}`);
+}
