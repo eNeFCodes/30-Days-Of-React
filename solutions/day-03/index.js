@@ -10,3 +10,6 @@ import * as everything from './math.js' // to import everything remaining
 console.log(addTwo(5, 5))
 console.log(doSomeMath.addTwo(5, 5))
 console.log(everything)
+
+import level1 from './level1.js';
+console.log(level1);
