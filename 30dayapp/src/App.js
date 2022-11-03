@@ -1,5 +1,4 @@
-import './App.css';
-import Day3Exercise from './components/Day3Exercise';
+import Day3Exercise from './components/day3/Day3Exercise';
 
 function App() {
   return (
