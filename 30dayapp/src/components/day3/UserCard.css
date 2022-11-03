@@ -1,0 +1,41 @@
+.skill-set-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: gray;
+    margin-top: 20px;
+}
+
+.skill-set {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-gap: 8px;
+}
+
+.skill {
+    padding: 8px;
+    border-radius: 8px;
+    background-color: green;
+    height: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-basis: content;
+}
+
+.joined-date {
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+}
+.clock {
+    width: 20px;
+    height: 20px;
+}
+.joined-label {
+    font-size: 14px;
+    font-weight: normal;
+    color: gray;
+    margin-left: 8px;
+}
