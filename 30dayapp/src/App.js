@@ -5,6 +5,7 @@ import UserCard from './components/day3/UserCard';
 import UserCardMock from './components/day3/UserCardMock';
 import ColorCard from './components/day4/ColorCard';
 import ColorsMock from './components/day4/ColorsMock';
+import Numbers from './components/day6/Numbers';
 
 function App() {
   return (
@@ -13,7 +14,8 @@ function App() {
       {/* <UserCard
         {...UserCardMock}
       /> */}
-      <ColorCard colors={ColorsMock} />
+      {/* <ColorCard colors={ColorsMock} /> */}
+      <Numbers range={31} />
     </div>
   );
 }

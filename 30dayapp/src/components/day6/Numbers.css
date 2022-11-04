@@ -1,0 +1,41 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.title {
+    font-size: 40px;
+    font-weight: bold;
+    color: black;
+
+}
+
+.app-title {
+    font-size: 25px;
+    font-weight: normal;
+    color: black;
+    margin-top: 8px;
+}
+
+.number-container {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-gap: 1px;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.number-box {
+    background-color: var(--color);
+    justify-content: center;
+    align-items: center;
+    padding: 35px;
+
+    font-size: 35px;
+    font-weight: bold;
+    color: white;
+}
