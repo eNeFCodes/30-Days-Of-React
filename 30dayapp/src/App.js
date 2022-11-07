@@ -11,6 +11,7 @@ import HexaColorsMock from './components/day6/HexaColorsMock';
 //import Population from './components/day6/Population';
 import Population from './components/day7/Population';
 import PopulationMock from './components/day6/PopulationMock';
+import Day8 from './components/day8';
 
 function App() {
   return (
@@ -22,7 +23,8 @@ function App() {
       {/* <ColorCard colors={ColorsMock} /> */}
       {/* <Numbers range={31} /> */}
       {/* <HexaColors colors={HexaColorsMock} /> */}
-      <Population data={PopulationMock} />
+      {/* <Population data={PopulationMock} /> */}
+      <Day8 />
     </div>
   );
 }
