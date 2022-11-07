@@ -19,7 +19,7 @@
     margin-left: 10px;
 }
 
-img {
+.main-bg-state img {
     width: 160px;
     height: 160px;
     object-fit: cover;

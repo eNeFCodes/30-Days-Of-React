@@ -3,6 +3,7 @@ import Header from './Header.js';
 import BackgroundState from "./BackgroundState";
 import './index.css';
 import Footer from "./Footer.js";
+import SelectCountry from "./SelectCountry.js";
 
 const Day8 = () => {
     const [bgColor, setBGColor] = useState('aqua');
@@ -26,12 +27,13 @@ const Day8 = () => {
         <div className="day8-main" style={{ '--bgColor': bgColor }}>
             <Header />
             <div className="divider" />
-            <BackgroundState
+            {/* <BackgroundState
                 bgColor={bgColor}
                 toggleGreat={toggleGreat}
                 toggleShowtime={toggleShowtime}
                 toggleChangeBackground={toggleChangeBackground}
-            />
+            /> */}
+            <SelectCountry />
             <div className="divider" />
             <Footer />
         </div>
