@@ -8,7 +8,8 @@ import ColorsMock from './components/day4/ColorsMock';
 import Numbers from './components/day6/Numbers';
 import HexaColors from './components/day6/HexaColors';
 import HexaColorsMock from './components/day6/HexaColorsMock';
-import Population from './components/day6/Population';
+//import Population from './components/day6/Population';
+import Population from './components/day7/Population';
 import PopulationMock from './components/day6/PopulationMock';
 
 function App() {
