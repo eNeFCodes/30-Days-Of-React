@@ -1,0 +1,6 @@
+.day9-index-main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
