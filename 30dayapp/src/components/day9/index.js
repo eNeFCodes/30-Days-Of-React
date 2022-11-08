@@ -1,7 +1,7 @@
 import './index.css';
 import React, { useEffect, useState } from "react";
 import BackgroundChange from "./BackgroundChange";
-import { SeasonItemsMock, DayTimeItemsMock } from "./BackgroundChangeMock";
+import { SeasonItemsMock, DayTimeItemsMock } from "./BackgroundChange/BackgroundChangeMock";
 
 const Day9 = () => {
     const [isLoading, setIsLoading] = useState(() => true);

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import PropTypes from 'prop-types';
-import './BackgroundChange.css'
+import './index.css'
 
 const BackgroundChange = ({ title, items }) => {
     const [selectedItem, setSelectedItem] = useState(() => items[0]);
