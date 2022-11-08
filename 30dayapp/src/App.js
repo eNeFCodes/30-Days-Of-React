@@ -25,8 +25,8 @@ function App() {
       {/* <Numbers range={31} /> */}
       {/* <HexaColors colors={HexaColorsMock} /> */}
       {/* <Population data={PopulationMock} /> */}
-      {/* <Day8 /> */}
-      <Day9 />
+      <Day8 />
+      {/* <Day9 /> */}
     </div>
   );
 }

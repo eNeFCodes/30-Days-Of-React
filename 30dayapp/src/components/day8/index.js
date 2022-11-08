@@ -27,13 +27,13 @@ const Day8 = () => {
         <div className="day8-main" style={{ '--bgColor': bgColor }}>
             <Header />
             <div className="divider" />
-            {/* <BackgroundState
+            <BackgroundState
                 bgColor={bgColor}
                 toggleGreat={toggleGreat}
                 toggleShowtime={toggleShowtime}
                 toggleChangeBackground={toggleChangeBackground}
-            /> */}
-            <SelectCountry />
+            />
+            {/* <SelectCountry /> */}
             <div className="divider" />
             <Footer />
         </div>
