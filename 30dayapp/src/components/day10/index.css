@@ -18,9 +18,11 @@
 [data-theme='light'] {
     --day10-bg-color: white;
     --day10-text-color: black;
+    --day10-content-bg: white;
 }
 
 [data-theme='dark'] {
     --day10-bg-color: black;
     --day10-text-color: white;
+    --day10-content-bg: gray;
 }

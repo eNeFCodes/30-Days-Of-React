@@ -6,7 +6,7 @@
     justify-content: flex-start;
     align-items: flex-start;
     padding-left: 150px;
-    background-color: var(--contentBG);
+    background-color: var(--day10-content-bg);
 }
 
 .day10-lists-title {
