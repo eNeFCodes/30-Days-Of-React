@@ -1,0 +1,9 @@
+.day10-footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    padding: 8px;
+    color: var(--day10-text-color);
+    background-color: var(--day10-bg-color);
+}

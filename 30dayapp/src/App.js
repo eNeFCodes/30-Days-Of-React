@@ -13,6 +13,7 @@ import Population from './components/day7/Population';
 import PopulationMock from './components/day6/PopulationMock';
 import Day8 from './components/day8';
 import Day9 from './components/day9';
+import Day10 from './components/day10';
 
 function App() {
   return (
@@ -25,8 +26,9 @@ function App() {
       {/* <Numbers range={31} /> */}
       {/* <HexaColors colors={HexaColorsMock} /> */}
       {/* <Population data={PopulationMock} /> */}
-      <Day8 />
+      {/* <Day8 /> */}
       {/* <Day9 /> */}
+      <Day10 />
     </div>
   );
 }

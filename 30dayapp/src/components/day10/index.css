@@ -1,0 +1,26 @@
+.day10-main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: var(--bgColor);
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.day10-divider {
+    display: flex;
+    width: 100%;
+    height: 4px;
+    background-color: white;
+}
+
+[data-theme='light'] {
+    --day10-bg-color: white;
+    --day10-text-color: black;
+}
+
+[data-theme='dark'] {
+    --day10-bg-color: black;
+    --day10-text-color: white;
+}

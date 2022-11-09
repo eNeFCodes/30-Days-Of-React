@@ -1,0 +1,21 @@
+.day10-header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+    padding-top: 20px;
+    background-color: var(--day10-bg-color);
+    padding-left: 150px;
+}
+
+.day10-title {
+    font-size: 40px;
+    font-weight: normal;
+    color: var(--day10-text-color);
+}
+
+.day10-details {
+    font-size: 20px;
+    font-weight: normal;
+    color: var(--day10-text-color);
+}
