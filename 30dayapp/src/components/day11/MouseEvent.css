@@ -1,0 +1,25 @@
+.day11-main {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-color: gray;
+    background-size: cover;
+}
+
+.day11-content {
+    display: flex;
+    height: 100px;
+    background-color: aqua;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    top: var(--day11-top);
+    left: var(--day11-left);
+
+}
+
+.day11-title {
+    font-size: 40px;
+    padding: 20px;
+}
