@@ -1,0 +1,28 @@
+.day12-main {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-rows: repeat(2, 1fr);
+
+}
+
+.day12-input-error {
+    font-size: 20px;
+    margin-top: 10px;
+    color: red;
+}
+
+.day12-input {
+    font-size: 20px;
+    margin-top: 10px;
+    color: black;
+}
+
+.day12-label {
+    font-size: 20px;
+    color: black;
+}
+
+.day12-label-error {
+    font-size: 20px;
+    color: red;
+}
