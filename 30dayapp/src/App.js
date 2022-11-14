@@ -17,6 +17,7 @@ import Day10 from './components/day10';
 import Day11 from './components/day11/MouseEvent';
 import Day12 from './components/day12/Validation';
 import Day15 from './components/day15';
+import Day16 from './components/day16/Day16';
 
 function App() {
   return (
@@ -34,7 +35,8 @@ function App() {
       {/* <Day10 /> */}
       {/* <Day11 /> */}
       {/* <Day12 /> */}
-      <Day15 />
+      {/* <Day15 /> */}
+      <Day16 />
     </div>
   );
 }
