@@ -1,8 +1,6 @@
 import {
     createBrowserRouter,
-    createRoutesFromElements,
     RouterProvider,
-    Route,
 } from "react-router-dom";
 
 import Root from "./Root";
@@ -10,7 +8,11 @@ import Dashboard from "./Dashboard";
 import MissingPage from "./MissingPage";
 import Settings from "./Settings";
 import About from "./About";
-import { element } from "prop-types";
+import Root2 from "./Root2";
+
+/* 
+Demo for creating Routing and Navigation
+*/
 
 const Day17 = () => {
     const router = createBrowserRouter([
@@ -35,6 +37,11 @@ const Day17 = () => {
                     element: <MissingPage />,
                 }
             ]
+        },
+        {
+            path: '/app',
+            element: <Root2 />,
+            children: []
         }
     ]);
 

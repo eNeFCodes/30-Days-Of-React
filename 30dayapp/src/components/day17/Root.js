@@ -9,6 +9,7 @@ const Root = () => {
                 <li><Link to='dashboard'>Dashboard</Link></li>
                 <li><Link to='about'>About</Link></li>
                 <li><Link to='settings'>Settings</Link></li>
+                <li><Link to='/app'>App</Link></li>
             </ul>
             <Outlet/>
         </div>
