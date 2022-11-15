@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.day19-main {
+    flex-direction: column;
+}
+
+.day19-header {
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(to right, rgb(167, 8, 253), rgb(77, 3, 197));
+    align-items: center;
+    padding: 20px;
+}
+
+.day19-title {
+    margin-top: 20px;
+    font-size: 3rem;
+    font-weight: bold;
+    color: aqua;
+    padding: 8px;
+}
+
+.day19-title2 {
+    margin-top: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.day19-details {
+    font-size: 1.5rem;
+    font-weight: light;
+    padding:8px;
+}
+
+.day19-details2 {
+    font-size: 1.2rem;
+    font-weight: light;
+    padding:8px;
+}
+
+.day19-content {
+    display: flex;
+    background-color: white;
+
+    align-items: center;
+    justify-content: center;
+}
