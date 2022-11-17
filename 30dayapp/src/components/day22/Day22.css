@@ -1,0 +1,39 @@
+.day22-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.day22-form {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid gray;
+}
+
+.day22-label {
+
+}
+
+.day22-label-error {
+    color: red;
+    font-size: 0.8rem;
+    margin-top: 4px;
+}
+
+.day22-input {
+    margin-top: 4px;
+    width: 200px;
+    height: 22px;
+}
+
+.day22-control {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.day22-button {
+    background-color: aqua;
+}
