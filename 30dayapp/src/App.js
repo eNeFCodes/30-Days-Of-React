@@ -24,6 +24,7 @@ import Day19 from './components/day19/Day19';
 import Day22 from './components/day22/Day22';
 import Day24 from './components/day24/Day24';
 import Day25 from './components/day25/Day25';
+import Day27 from './components/day27/Day27';
 
 function App() {
   return (
@@ -48,7 +49,8 @@ function App() {
       {/* <Day19 /> */}
       {/* <Day22 /> */}
       {/* <Day24 /> */}
-      <Day25 />
+      {/* <Day25 /> */}
+      <Day27 />
     </div>
   );
 }
