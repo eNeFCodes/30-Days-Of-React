@@ -1,0 +1,108 @@
+.day25-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    align-items: center;
+    background-color: rgba(234, 234, 234, 0.931);
+    padding: 20px;
+}
+
+.day25-title {
+    font-size: 5rem;
+    font-weight: bold;
+    color: orange;
+}
+
+.day25-subtitle {
+    font-size: 2rem;
+    font-weight: bold;
+    color: gray;
+}
+
+.day25-searchbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+}
+
+.day25-search-input {
+    font-size: 2rem;
+    background-color: antiquewhite;
+    color: rgb(186, 166, 140);
+    border: 1px solid rgb(215, 178, 150);
+    border-radius: 35px;
+    width: 40vw;
+    height: 70px;
+    padding: 0px 20px 0px 20px;
+}
+
+.day25-chart-button {
+    display: flex;
+    background-color: transparent;
+}
+
+.day25-chart-icon {
+    width: 60px;
+    height: 60px;
+}
+
+.day25-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+
+    width: 100vw;
+    /* justify-content: center;
+    align-items: center; */
+    background-color: rgba(234, 234, 234, 0.931);
+    padding: 20px;
+}
+
+.day25-cartcard-main {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.day25-cartcard-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.day25-cartcard-img {
+    width: 240px;
+    height: 150px;
+    box-shadow: 4px 4px rgba(135, 135, 135, 0.3);
+    margin: 20px;
+    border: 2px solid rgba(135, 135, 135, 0.3);
+}
+
+.day25-cartcard-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: orange;
+}
+
+.day25-cartcard-body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 20px;
+}
+
+.day25-cartcard-label {
+    font-size: 1rem;
+    font-weight: normal;
+}
