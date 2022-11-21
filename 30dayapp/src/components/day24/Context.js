@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 
-export const Day14Context = React.createContext();
-export const Day14ContextProvider = ({ children }) => {
+export const Day24Context = React.createContext();
+export const Day24ContextProvider = ({ children }) => {
     const [catData, setCatData] = useState([]);
 
     const fetchCats = async () => {
@@ -21,10 +21,10 @@ export const Day14ContextProvider = ({ children }) => {
     }, [])
 
     return (
-        <Day14Context.Provider value={{
+        <Day24Context.Provider value={{
             catData
         }}>
             {children}
-        </Day14Context.Provider>
+        </Day24Context.Provider>
     )
 };

@@ -1,11 +1,11 @@
 import { useContext, useState } from 'react';
 import './Day24.css';
-import { Day14Context, Day14ContextProvider } from './Context';
+import { Day24Context, Day24ContextProvider } from './Context';
 import CatCard from './CatCard';
 const defImage = require('../../assets/loading.gif');
 
 const Day24Content = () => {
-    const { catData } = useContext(Day14Context);
+    const { catData } = useContext(Day24Context);
     const [filteredCat, setFilteredCat] = useState([]);
     const [searchInput, setSearchInput] = useState('');
 
@@ -82,9 +82,9 @@ const Day24Content = () => {
 
 const Day24 = () => {
     return (
-        <Day14ContextProvider>
+        <Day24ContextProvider>
             <Day24Content />
-        </Day14ContextProvider>
+        </Day24ContextProvider>
     )
 };
 export default Day24;
