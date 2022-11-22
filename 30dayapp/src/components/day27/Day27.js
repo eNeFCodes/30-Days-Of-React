@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import './Day27.css';
+const copyIcon = require('../../assets/copy_icon.png');
 
 const Day27 = () => {
     const [hexCollection, setHexCollection] = useState([]);
@@ -31,7 +32,12 @@ const Day27 = () => {
 
     useEffect(() => {
         generateHexColors(20);
-    }, [])
+    }, []);
+
+    const copyAction = (hexString) => {
+        navigator.clipboard.writeText(hexString);
+        console.log(`Copied:`, hexString);
+    }
 
     return (
         <div className="day27-main">
@@ -45,6 +51,9 @@ const Day27 = () => {
                 {hexCollection.map((hexString, index) => (
                     <div key={index} className='day27-color-box' style={{ '--bgColor': hexString }}>
                         <span className='day27-color-text'>{hexString}</span>
+                        <button className='day27-color-button' onClick={() => copyAction(hexString)}>
+                            <img className='day27-color-button-icon' src={copyIcon} alt='Copy'/>
+                        </button>
                     </div>
                 ))}
             </div>
